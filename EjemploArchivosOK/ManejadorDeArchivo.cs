@@ -15,12 +15,32 @@ namespace EjemploArchivosOK
         public static bool GuardarAula(Aula aulaUno)
         {
             try
-            {
+            {// el using es formato permanente, dentro del try
                 using(XmlTextWriter escritura = new XmlTextWriter("Aula.Xml", Encoding.UTF8))
                 {
                     XmlSerializer Serializar = new XmlSerializer(typeof(Aula));
                     Serializar.Serialize(escritura, aulaUno);
                     return true;
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public static bool GuardarLista(List<Persona> lista)
+        {
+            try 
+            {
+                using(XmlTextWriter escritura = new XmlTextWriter("Lista.Xml", Encoding.UTF8))
+                {
+                    XmlSerializer serializar = new XmlSerializer(typeof(List<Persona>));
+                    {
+                        serializar.Serialize(escritura, lista);
+                        return true;
+                    }
                 }
             }
             catch(Exception ex)

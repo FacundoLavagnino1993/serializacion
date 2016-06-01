@@ -11,6 +11,7 @@ namespace EjemploArchivosOK
     {
         public string nombre;
         public Persona profesor;
+        public List<Persona> ListaDeAlumnos;
 
         public Aula()
         { }
@@ -18,6 +19,7 @@ namespace EjemploArchivosOK
         {
             this.nombre = Nombre;
             this.profesor = persona;
+            this.ListaDeAlumnos = new List<Persona>();
         }
 
     }
