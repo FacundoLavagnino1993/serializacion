@@ -126,6 +126,33 @@ namespace EjemploArchivosOK
                 }
 
             }
+
+          
+
+        //Deserealizar
+            public static Aula CargarAula()
+            {
+                Aula aulaAuxiliar;
+                try
+                {
+                    using (XmlTextReader lector = new XmlTextReader("Aula.Xml")) 
+                    {
+                        XmlSerializer serializar = new XmlSerializer(typeof(Aula));
+                        aulaAuxiliar = (Aula)serializar.Deserialize(lector);
+                        Console.WriteLine("Deserializacion realizada");
+                        
+                        return aulaAuxiliar;
+                        
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return null;
+                }
+
+                
+            }
         
 
     }

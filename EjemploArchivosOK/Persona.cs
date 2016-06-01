@@ -7,19 +7,23 @@ using System.IO;
 
 namespace EjemploArchivosOK
 {
-    public class Persona
+    
+
+    public class Persona:serHumano
     {
         public string nombre;
         public string apellido;
-
+        
         public Persona()
         { }
 
 
-        public Persona(string Nombre, string Apellido)
+        public Persona(string Nombre, string Apellido, string dni):base(dni)
         {
             this.nombre = Nombre;
             this.apellido = Apellido;
         }
+
+        
     }
 }
