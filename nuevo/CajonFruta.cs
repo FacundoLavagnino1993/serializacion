@@ -8,5 +8,9 @@ namespace nuevo
 {
     class CajonFruta:Cajon
     {
+        //public override void mostrar()
+        //{
+            
+        //}
     }
 }

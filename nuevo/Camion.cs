@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace nuevo
 {
-    class Camion
+    class Camion:Transporte
     {
         public int cantRuedas;
+        public Profesional chofer;
         public override bool tieneMotor
         {
             get { return true; }

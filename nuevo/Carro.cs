@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace nuevo
 {
-    class Carro
+    class Carro:Transporte
     {
         public string animal;
-        public string persona;
+        public Persona unaPersona;
 
         public override bool tieneMotor
         {

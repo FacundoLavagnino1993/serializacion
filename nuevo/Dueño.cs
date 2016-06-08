@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace nuevo
 {
-    class CajonVerdura:Cajon
+    class Dueño:Persona
     {
-        //public override void Mostrar()
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public string cuit;
     }
 }

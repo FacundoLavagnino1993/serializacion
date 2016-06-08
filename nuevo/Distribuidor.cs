@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace nuevo
 {
-    class Distribuidor:Transporte
+    class Distribuidor
     {
         public List<Transporte> listaDeTrans;
-        public string dueño;
+        public Dueño unDueño;
+
+        //public override bool tieneMotor
+        //{
+        //    get { return false; }
+        //}
     }
 }

@@ -8,8 +8,8 @@ namespace nuevo
 {
     public abstract class Cajon
     {
-        public abstract void Mostrar()
-        { }
+        //public abstract void Mostrar()
+        //{ }
 
         public string ToString()
         { return base.ToString(); }
