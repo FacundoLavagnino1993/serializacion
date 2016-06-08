@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace nuevo
 {
-    class Dueño:Persona
+    public class Dueño:Persona
     {
         public string cuit;
+
+        public Dueño()
+        { }
+
+        public Dueño(string Cuit, string nom, string ape, int dni)
+            : base(nom, ape, dni)
+        {
+            this.cuit = Cuit;
+        }
     }
 }

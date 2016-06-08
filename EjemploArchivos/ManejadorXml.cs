@@ -8,7 +8,7 @@ using System.IO;
 
 namespace EjemploArchivos
 {
-    class ManejadorXml
+    public class ManejadorXml
     {
         public static bool GuardarPersona(Persona per)
         {

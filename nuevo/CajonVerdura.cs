@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace nuevo
 {
-    class CajonVerdura:Cajon
+    public class CajonVerdura:Cajon
     {
-        //public override void Mostrar()
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public string tipo;
+
+        public CajonVerdura()
+        {}
+
+
+        public override void Mostrar()
+        {
+            Console.WriteLine("Tipo : " + this.tipo);
+        }
     }
 }

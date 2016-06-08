@@ -50,6 +50,7 @@
     <Compile Include="Conductor.cs" />
     <Compile Include="Distribuidor.cs" />
     <Compile Include="Dueño.cs" />
+    <Compile Include="GeneradoraDeDatos.cs" />
     <Compile Include="Informal.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Profesional.cs" />
@@ -60,6 +61,13 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EjemploArchivos\EjemploArchivos.csproj">
+      <Project>{6521fcdf-c89a-43d8-96ed-4efb5c0d38b5}</Project>
+      <Name>EjemploArchivos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

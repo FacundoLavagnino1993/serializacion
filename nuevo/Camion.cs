@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace nuevo
 {
-    class Camion:Transporte
+    public class Camion:Transporte
     {
         public int cantRuedas;
         public Profesional chofer;
@@ -14,5 +14,16 @@ namespace nuevo
         {
             get { return true; }
         }
+
+        public Camion()
+        { }
+
+        public Camion(int cantiRuedas, Profesional conductor, int Capa)
+            : base(Capa)
+        {
+            this.cantRuedas = cantiRuedas;
+            this.chofer = conductor;
+        }
+
     }
 }

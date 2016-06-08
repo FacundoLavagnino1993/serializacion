@@ -15,9 +15,16 @@ namespace nuevo
         }
 
         public string ToString()
-        { return base.ToString(); }
+        { return ""; }
 
-        public List<Cajon> listaCajon;
+        public Transporte()
+        { }
+
+        public Transporte(int capacidad)
+        {
+            this.capacidadCajones = capacidad;
+        }
+        
 
 
     }

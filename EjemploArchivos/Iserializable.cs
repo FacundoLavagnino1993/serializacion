@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EjemploArchivos
 {
-    interface Iserializable
+    public interface Iserializable
     {
         bool guardarEnXml(); 
     }

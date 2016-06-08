@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace nuevo
 {
-    public class Persona
+    public abstract class Persona
     {
         public string nombre;
         public string apellido;
@@ -14,13 +14,13 @@ namespace nuevo
 
         public Persona()
         { }
-
         public Persona(string nom, string ape, int dni)
         {
             this.nombre = nom;
             this.apellido = ape;
             this.dni = dni;
         }
+       
 
     }
 }
